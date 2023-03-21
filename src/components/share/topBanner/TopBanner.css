@@ -1,0 +1,23 @@
+.top-banner {
+  position: relative;
+  background: url("https://i.ibb.co/hDcWrJW/top-Banner.png");
+  z-index: 1;
+}
+
+.top-banner::before {
+  content: "";
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0.8687850140056023) 89%,
+    rgba(53, 45, 99, 0.4514180672268907) 1243%
+  );
+  z-index: -1;
+}

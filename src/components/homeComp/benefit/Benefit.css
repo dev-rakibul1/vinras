@@ -1,0 +1,32 @@
+.accordion-on {
+  height: auto;
+  visibility: visible;
+  transform: translateY(10px);
+  transition: 0.5s;
+  opacity: 1;
+}
+
+.accordion-off {
+  height: 0;
+  visibility: hidden;
+  transform: translateY(0);
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.icon-rotated {
+  transform: rotate(180deg);
+  transition: 0.5s;
+}
+
+.icon-transition {
+  transition: 0.5s;
+}
+
+.benefit-article-border {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+}

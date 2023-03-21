@@ -1,0 +1,113 @@
+.advisor-image {
+  border-radius: 0px 100px 0px 100px;
+}
+
+.advisor-single-items {
+  position: relative;
+  border-radius: 0px 100px 0px 100px;
+  overflow: hidden;
+}
+
+.advisor-single-items::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "";
+  width: 100%;
+  height: 150%;
+  /* background: #000; */
+  border-radius: 0px 100px 0px 100px;
+  background: rgb(255, 255, 255);
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0.8687850140056023) 89%,
+    rgba(53, 45, 99, 0.4514180672268907) 1243%
+  );
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.advisor-box:hover .advisor-single-items::before {
+  bottom: 0;
+  height: 100%;
+}
+
+.advisor-box {
+  position: relative;
+}
+.advisor-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.advisor-content .user-about {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: translateX(-50%);
+  color: #ffffff;
+  font-size: 0;
+  transition: 1s;
+  opacity: 0;
+}
+
+.advisor-box:hover .user-about {
+  font-size: 14px;
+  opacity: 1;
+}
+.advisor-content .advisor-social-icon .advisor-icon-1:hover,
+.advisor-content .advisor-social-icon .advisor-icon-2:hover,
+.advisor-content .advisor-social-icon .advisor-icon-3:hover,
+.advisor-content .advisor-social-icon .advisor-icon-4:hover {
+  background-color: #f94d1c;
+  color: #fff;
+}
+
+.advisor-content .advisor-social-icon .advisor-icon-1,
+.advisor-content .advisor-social-icon .advisor-icon-2,
+.advisor-content .advisor-social-icon .advisor-icon-3,
+.advisor-content .advisor-social-icon .advisor-icon-4 {
+  position: absolute;
+  top: 0;
+  left: -20%;
+}
+
+.advisor-content .advisor-social-icon .advisor-icon-1 {
+  transition: 0.6s;
+}
+
+.advisor-content .advisor-social-icon .advisor-icon-2 {
+  top: 12%;
+  transition: 1s;
+}
+
+.advisor-content .advisor-social-icon .advisor-icon-3 {
+  top: 24%;
+  transition: 1.3s;
+}
+
+.advisor-content .advisor-social-icon .advisor-icon-3 {
+  top: 24%;
+  transition: 1.6s;
+}
+
+.advisor-content .advisor-social-icon .advisor-icon-4 {
+  transition: 2s;
+  top: 36%;
+}
+
+.advisor-box:hover .advisor-icon-1,
+.advisor-box:hover .advisor-icon-2,
+.advisor-box:hover .advisor-icon-3,
+.advisor-box:hover .advisor-icon-4 {
+  left: 0 !important;
+  background: #ffffff;
+}

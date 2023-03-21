@@ -1,0 +1,17 @@
+.blog-wrapper {
+  position: relative;
+}
+
+.blog-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 7%;
+  left: -15%;
+  width: 400px;
+  height: 200px;
+  background: #f94d1c;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  transform: rotate(-45deg);
+  z-index: -1;
+}

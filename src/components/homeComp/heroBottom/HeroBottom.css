@@ -1,0 +1,20 @@
+.hero-bottom-box {
+  z-index: 1;
+}
+
+.single-items {
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.single-items:hover {
+  background: #f94d1c;
+  color: #fff;
+}
+.single-items span {
+  transition: 0.5s;
+}
+.single-items:hover span {
+  background: #fff;
+  color: #f94d1c;
+}

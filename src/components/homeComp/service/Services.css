@@ -1,0 +1,20 @@
+.service-wrapper {
+  background-color: #f3f3f4;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 150px;
+  display: block;
+  background-color: #f94d1c;
+  top: 0;
+  right: -50px;
+  transform: rotate(-45deg);
+  z-index: 1;
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
+}
